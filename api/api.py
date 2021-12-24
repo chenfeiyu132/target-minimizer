@@ -22,7 +22,7 @@ def get_item():
     existing_info = db.search(Item.tcin == tcin)
     if existing_info:
         minCost, minLoc_name, minLoc_id = existing_info[0]['cost'], existing_info[0]['store_name'], existing_info[0]['store_id']
-        return {'success': True, 'message': 'The best price is {0} at {1}({2}).'.format(minCost, minLoc_name, minLoc_id), 'minCost': minCost, 'location_name': minLoc_name, 'location_id': minLoc_id}
+        return {'success': True, 'message': 'The best price is {0} at {1}({2}).'.format(minCost, minLoc_name, minLoc_idgit ), 'minCost': minCost, 'location_name': minLoc_name, 'location_id': minLoc_id}
     else:
         if tcin not in tcin_tasks:
             # Spawns a different thread in the background to process the minCost finding task(time consuming)
