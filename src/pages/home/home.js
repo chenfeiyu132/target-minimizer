@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useInput } from '../../hooks/input-hook';
-import SearchBar from '../../components/SearchBar/SearchBar';
+import { SearchBar, Item } from '../../components';
 import logo from '../../images/target.svg';
 import './home.css';
 
@@ -33,6 +33,7 @@ function Home() {
         <header className="App-header"> 
             <img src={logo} className="App-logo" alt="logo" />
             <SearchBar handleSubmit={handleSubmit} searchQuery={query} setSearchQuery={setQuery}/>
+            <Item item={currItem}></Item>
             <p class="text">{currMessage}</p>
         </header>
         </div>
