@@ -5,9 +5,7 @@ import storeIDGenerator
 import pandas as pd
 import aiohttp
 from pathlib import Path
-
-# import sqlite3 as sl
-from tinydb import TinyDB, Query
+from base import db
 
 
 
@@ -46,10 +44,8 @@ async def asyncMinCost(tcin_tasks, item_id):
         s = requests.session()
         s.get('https://www.target.com')
         user_id = s.cookies['visitorId']
-        db_file = Path(__file__).parent / "minCost.json"
         zip_cache = Path(__file__).parent / "saved_zips.csv"
 
-        db = TinyDB(db_file)
         df = pd.read_csv(zip_cache)
         locationIds = [id for id in df['STORE_ID'] if int(id) != 0]
         locationNames = [name for name in df['STORE'] if not pd.isnull(name)]
@@ -61,16 +57,23 @@ async def asyncMinCost(tcin_tasks, item_id):
             tcin_tasks[item_id]['tasks'].append(asyncio.ensure_future(asyncGetPriceOfItem(session, taskUrl)))
             prices = await asyncio.gather(*tcin_tasks[item_id]['tasks'])
         
-        minLoc = {}
+        minLocs = {}
+        store_ids = set()
         minCost = float('infinity')
         for index, locationId in enumerate(locationIds):
-            if prices[index] and prices[index] < minCost:
-                minCost = prices[index]
-                minLoc['id'] = locationId
-                minLoc['name'] = locationNames[index]
-        minLoc_name = minLoc['name']
-        minLoc_id = minLoc['id']
-        db.insert({'tcin': item_id, 'store_id': minLoc_id, 'store_name': minLoc_name, 'cost': minCost})
+            if locationId in store_ids:
+                continue
+            store_ids.add(locationId)
+            if prices[index] and prices[index] <= minCost:
+                if prices[index] == minCost:
+                    minLocs['id'].append(locationId)
+                    minLocs['name'].append(locationNames[index])
+                else:
+                    minCost = prices[index]
+                    minLocs['id'] = [locationId]
+                    minLocs['name'] = [locationNames[index]]
+        items = db['items']
+        items.insert_one({'tcin': item_id, 'min_stores': minLocs, 'cost': minCost})
         tcin_tasks[item_id]['status'] = 'ended'
 
 # locationIds = asyncio.run(storeIDGenerator.getLocationsAsync(df['ZIP'], 100, 1))

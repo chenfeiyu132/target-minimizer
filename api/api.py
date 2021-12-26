@@ -1,9 +1,9 @@
 from flask import Flask, make_response
-from tinydb import TinyDB, Query
 import asyncio
-import helper
+from helper import asyncMinCost
 from threading import Thread
 from pathlib import Path
+from base import db
 
 app = Flask(__name__, static_folder='../build', static_url_path='/')
 tcin_tasks = {}
@@ -13,7 +13,7 @@ class Worker(Thread):
         Thread.__init__(self)
         self.tcin = tcin
     def run(self):
-        asyncio.run(helper.asyncMinCost(tcin_tasks, self.tcin))
+        asyncio.run(asyncMinCost(tcin_tasks, self.tcin))
 
 @app.route('/')
 def index():
@@ -21,12 +21,12 @@ def index():
 
 @app.route('/item/<tcin>')
 def get_item(tcin):
-    Item = Query()
-    db = TinyDB(Path(__file__).parent / "minCost.json")
-    existing_info = db.search(Item.tcin == tcin)
+    items = db['items']
+    existing_info = items.find_one({'tcin': tcin})
     if existing_info:
-        minCost, minLoc_name, minLoc_id = existing_info[0]['cost'], existing_info[0]['store_name'], existing_info[0]['store_id']
-        return make_response({'success': True, 'message': 'The best price is {0} at {1}({2}).'.format(minCost, minLoc_name, minLoc_id), 'minCost': minCost, 'location_name': minLoc_name, 'location_id': minLoc_id}, 200)
+        minCost, minLocs = existing_info['cost'], existing_info['min_stores']
+        print(minLocs)
+        return make_response({'success': True, 'message': 'The best price is {0} at {1}({2}).'.format(minCost, minLocs['name'][0], minLocs['id'][0]), 'minCost': minCost, 'min_stores': minLocs}, 200)
     else:
         if tcin not in tcin_tasks:
             # Spawns a different thread in the background to process the minCost finding task(time consuming)
