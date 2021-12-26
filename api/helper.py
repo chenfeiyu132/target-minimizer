@@ -4,11 +4,8 @@ import requests
 import storeIDGenerator
 import pandas as pd
 import aiohttp
-<<<<<<< HEAD
-=======
 from pathlib import Path
 
->>>>>>> e81fe5c72fe10e82c917a367e02709acc11c33c7
 # import sqlite3 as sl
 from tinydb import TinyDB, Query
 
@@ -49,17 +46,11 @@ async def asyncMinCost(tcin_tasks, item_id):
         s = requests.session()
         s.get('https://www.target.com')
         user_id = s.cookies['visitorId']
-<<<<<<< HEAD
-
-        db = TinyDB('minCost.json')
-        df = pd.read_csv('saved_zips.csv')
-=======
         db_file = Path(__file__).parent / "minCost.json"
         zip_cache = Path(__file__).parent / "saved_zips.csv"
 
         db = TinyDB(db_file)
         df = pd.read_csv(zip_cache)
->>>>>>> e81fe5c72fe10e82c917a367e02709acc11c33c7
         locationIds = [id for id in df['STORE_ID'] if int(id) != 0]
         locationNames = [name for name in df['STORE'] if not pd.isnull(name)]
         tcin_tasks[item_id]['tasks'] = []
