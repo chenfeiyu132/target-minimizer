@@ -1,0 +1,514 @@
+,ZIP,LAT,LONG,CITY,STATE,COUNTY,STORE_ID,STORE
+0,33040,24.446667,-81.035,Key West,FL,Monroe County,0,
+1,33042,24.446667,-79.785,Summerland Key,FL,Monroe County,1075,Cutler Ridge
+2,78521,25.696667,-96.035,Brownsville,TX,Cameron County,2152,Brownsville North
+3,34141,25.696667,-79.785,Ochopee,FL,Collier County,1512,Miramar
+4,33109,25.696667,-78.535,Miami Beach,FL,Miami-Dade County,3269,South Beach
+5,78067,26.946667,-98.535,San Ygnacio,TX,Zapata County,2112,Laredo East
+6,78591,26.946667,-97.285,Santa Elena,TX,Starr County,2224,McAllen Northwest
+7,34224,26.946667,-81.035,Englewood,FL,Charlotte County,813,Venice
+8,33471,26.946667,-79.785,Moore Haven,FL,Glades County,2369,Fort Myers North
+9,33408,26.946667,-78.535,North Palm Beach,FL,Palm Beach County,1941,Lake Park/Palm Beach Gardens
+10,78834,28.196667,-98.535,Carrizo Springs,TX,Dimmit County,801,Laredo
+11,78072,28.196667,-97.285,Tilden,TX,McMullen County,771,SW Military Drive
+12,78393,28.196667,-96.035,Woodsboro,TX,Refugio County,335,Corpus Christi
+13,33543,28.196667,-81.035,Wesley Chapel,FL,Pasco County,1382,New Tampa
+14,34773,28.196667,-79.785,Saint Cloud,FL,Osceola County,1934,Viera
+15,79852,29.446667,-102.285,Terlingua,TX,Brewster County,0,
+16,78843,29.446667,-99.785,Laughlin A F B,TX,Val Verde County,0,
+17,78801,29.446667,-98.535,Uvalde,TX,Uvalde County,2426,San Antonio Culebra
+18,78207,29.446667,-97.285,San Antonio,TX,Bexar County,771,SW Military Drive
+19,77984,29.446667,-96.035,Shiner,TX,Lavaca County,888,Victoria
+20,77417,29.446667,-94.785,Beasley,TX,Fort Bend County,2205,Rosenberg
+21,77590,29.446667,-93.535,Texas City,TX,Galveston County,1535,Galveston
+22,70548,29.446667,-91.035,Kaplan,LA,Vermilion Parish,1473,Lafayette
+23,70356,29.446667,-89.785,Gibson,LA,Terrebonne Parish,1450,Houma
+24,70083,29.446667,-88.535,Port Sulphur,LA,Plaquemines Parish,1451,Harvey
+25,32648,29.446667,-82.285,Horseshoe Beach,FL,Dixie County,687,Gainesville
+26,32667,29.446667,-81.035,Micanopy,FL,Alachua County,687,Gainesville
+27,32136,29.446667,-79.785,Flagler Beach,FL,Flagler County,2364,Palm Coast
+28,79854,30.696667,-103.535,Valentine,TX,Jeff Davis County,0,
+29,79734,30.696667,-102.285,Fort Davis,TX,Jeff Davis County,0,
+30,76854,30.696667,-98.535,London,TX,Kimble County,254,San Angelo
+31,78639,30.696667,-97.285,Kingsland,TX,Llano County,1812,Bee Cave
+32,76530,30.696667,-96.035,Granger,TX,Williamson County,1982,Georgetown
+33,77861,30.696667,-94.785,Iola,TX,Grimes County,2428,Bryan
+34,77351,30.696667,-93.535,Livingston,TX,Polk County,953,Lufkin
+35,70653,30.696667,-92.285,Merryville,LA,Beauregard Parish,1399,Lake Charles
+36,70586,30.696667,-91.035,Ville Platte,LA,Evangeline Parish,167,Alexandria
+37,70777,30.696667,-89.785,Slaughter,LA,East Feliciana Parish,2089,Baton Rouge East
+38,39426,30.696667,-88.535,Carriere,MS,Pearl River County,1876,Covington
+39,39565,30.696667,-87.285,Vancleave,MS,Jackson County,2485,D'Iberville
+40,32571,30.696667,-86.035,Milton,FL,Santa Rosa County,2279,Pace
+41,32455,30.696667,-84.785,Ponce De Leon,FL,Walton County,2208,Pier Park
+42,32324,30.696667,-83.535,Chattahoochee,FL,Gadsden County,3273,Tallahassee FL State U
+43,31643,30.696667,-82.285,Quitman,GA,Brooks County,750,Valdosta
+44,31562,30.696667,-81.035,Saint George,GA,Charlton County,2233,Jacksonville West
+45,85736,31.946667,-111.035,Tucson,AZ,Pima County,1316,Tucson SW
+46,85629,31.946667,-109.785,Sahuarita,AZ,Pima County,1316,Tucson SW
+47,85625,31.946667,-108.535,Pearce,AZ,Cochise County,735,Sierra Vista
+48,88020,31.946667,-107.285,Animas,NM,Hidalgo County,735,Sierra Vista
+49,88008,31.946667,-106.035,Santa Teresa,NM,Doa Ana County,822,El Paso West
+50,79916,31.946667,-104.785,Fort Bliss,TX,El Paso County,849,El Paso Central
+51,88252,31.946667,-102.285,Jal,NM,Lea County,1506,Odessa
+52,79765,31.946667,-101.035,Odessa,TX,Ector County,1506,Odessa
+53,76951,31.946667,-99.785,Sterling City,TX,Sterling County,254,San Angelo
+54,79538,31.946667,-98.535,Novice,TX,Coleman County,219,Abilene
+55,76442,31.946667,-97.285,Comanche,TX,Comanche County,1981,Weatherford
+56,76692,31.946667,-96.035,Whitney,TX,Hill County,1531,Waco
+57,75861,31.946667,-94.785,Tennessee Colony,TX,Anderson County,775,Tyler
+58,75667,31.946667,-93.535,Laneville,TX,Rusk County,775,Tyler
+59,71063,31.946667,-92.285,Pelican,LA,De Soto Parish,1347,Shreveport
+60,71465,31.946667,-91.035,Olla,LA,La Salle Parish,167,Alexandria
+61,39150,31.946667,-89.785,Port Gibson,MS,Claiborne County,754,North Jackson
+62,39111,31.946667,-88.535,Magee,MS,Simpson County,1920,Flowood
+63,36913,31.946667,-87.285,Melvin,AL,Choctaw County,2055,Hattiesburg
+64,36726,31.946667,-86.035,Camden,AL,Wilcox County,2274,Prattville
+65,36036,31.946667,-84.785,Grady,AL,Montgomery County,1825,Montgomery
+66,31815,31.946667,-83.535,Lumpkin,GA,Stewart County,1179,Columbus
+67,31072,31.946667,-82.285,Pitts,GA,Wilcox County,1380,Warner Robins
+68,31513,31.946667,-81.035,Baxley,GA,Appling County,2301,Brunswick
+69,31406,31.946667,-79.785,Savannah,GA,Chatham County,2331,Savannah East
+70,90274,33.196667000000005,-117.285,Palos Verdes Peninsula,CA,Los Angeles County,3360,Rolling Hills
+71,92056,33.196667000000005,-116.035,Oceanside,CA,San Diego County,303,Oceanside
+72,92004,33.196667000000005,-114.785,Borrego Springs,CA,San Diego County,1816,El Centro
+73,92283,33.196667000000005,-113.535,Winterhaven,CA,Imperial County,2083,Yuma
+74,85333,33.196667000000005,-112.285,Dateland,AZ,Yuma County,2400,Goodyear West
+75,85139,33.196667000000005,-111.035,Maricopa,AZ,Pinal County,909,Ahwatukee
+76,85137,33.196667000000005,-109.785,Kearny,AZ,Pinal County,2365,Queen Creek
+77,85535,33.196667000000005,-108.535,Eden,AZ,Graham County,700,Oro Valley
+78,88039,33.196667000000005,-107.285,Glenwood,NM,Catron County,0,
+79,87942,33.196667000000005,-106.035,Williamsburg,NM,Sierra County,769,Las Cruces
+80,88352,33.196667000000005,-104.785,Tularosa,NM,Otero County,769,Las Cruces
+81,88203,33.196667000000005,-103.535,Roswell,NM,Chaves County,832,Roswell
+82,88267,33.196667000000005,-102.285,Tatum,NM,Lea County,832,Roswell
+83,79316,33.196667000000005,-101.035,Brownfield,TX,Terry County,2190,Lubbock Marsha Sharp
+84,79330,33.196667000000005,-99.785,Justiceburg,TX,Garza County,83,Lubbock University Ave
+85,79547,33.196667000000005,-98.535,Rule,TX,Haskell County,219,Abilene
+86,76460,33.196667000000005,-97.285,Loving,TX,Young County,80,Wichita Falls
+87,76259,33.196667000000005,-96.035,Ponder,TX,Denton County,2145,Denton
+88,75401,33.196667000000005,-94.785,Greenville,TX,Hunt County,1065,Rockwall
+89,75571,33.196667000000005,-93.535,Omaha,TX,Morris County,1811,Texarkana
+90,71861,33.196667000000005,-92.285,Taylor,AR,Columbia County,2273,Bossier City
+91,71765,33.196667000000005,-91.035,Strong,AR,Union County,1469,Monroe
+92,38744,33.196667000000005,-89.785,Glen Allan,MS,Washington County,754,North Jackson
+93,39192,33.196667000000005,-88.535,West,MS,Attala County,754,North Jackson
+94,39739,33.196667000000005,-87.285,Brooksville,MS,Noxubee County,1787,Tuscaloosa
+95,35490,33.196667000000005,-86.035,Vance,AL,Tuscaloosa County,1787,Tuscaloosa
+96,35072,33.196667000000005,-84.785,Goodwater,AL,Coosa County,2153,Oxford
+97,30220,33.196667000000005,-83.535,Grantville,GA,Coweta County,1223,Newnan
+98,31038,33.196667000000005,-82.285,Hillsboro,GA,Jasper County,1380,Warner Robins
+99,30818,33.196667000000005,-81.035,Matthews,GA,Jefferson County,1090,Augusta
+100,29081,33.196667000000005,-79.785,Ehrhardt,SC,Bamberg County,1310,Aiken
+101,29434,33.196667000000005,-78.535,Cordesville,SC,Berkeley County,1829,North Charleston
+102,93111,34.446667000000005,-118.535,Santa Barbara,CA,Santa Barbara County,3298,Santa Barbara Galleria
+103,91350,34.446667000000005,-117.285,Santa Clarita,CA,Los Angeles County,2030,Santa Clarita East
+104,92345,34.446667000000005,-116.035,Hesperia,CA,San Bernardino County,2468,Hesperia
+105,92278,34.446667000000005,-114.785,Twentynine Palms,CA,San Bernardino County,1867,La Quinta
+106,92280,34.446667000000005,-113.535,Vidal,CA,San Bernardino County,2368,Bullhead City
+107,86406,34.446667000000005,-112.285,Lake Havasu City,AZ,Mohave County,2368,Bullhead City
+108,86333,34.446667000000005,-111.035,Mayer,AZ,Yavapai County,884,Prescott
+109,86024,34.446667000000005,-109.785,Happy Jack,AZ,Coconino County,935,Flagstaff
+110,85924,34.446667000000005,-108.535,Concho,AZ,Apache County,0,
+111,87829,34.446667000000005,-107.285,Quemado,NM,Catron County,0,
+112,87036,34.446667000000005,-104.785,Mountainair,NM,Torrance County,357,Albuquerque Lomas
+113,88136,34.446667000000005,-103.535,Yeso,NM,De Baca County,832,Roswell
+114,88124,34.446667000000005,-102.285,Melrose,NM,Curry County,832,Roswell
+115,79027,34.446667000000005,-101.035,Dimmitt,TX,Castro County,221,Amarillo
+116,79255,34.446667000000005,-99.785,Quitaque,TX,Briscoe County,83,Lubbock University Ave
+117,73537,34.446667000000005,-98.535,Eldorado,OK,Jackson County,2739,Lawton
+118,73540,34.446667000000005,-97.285,Faxon,OK,Comanche County,2739,Lawton
+119,73458,34.446667000000005,-96.035,Springer,OK,Carter County,1861,Sherman
+120,74569,34.446667000000005,-94.785,Stringtown,OK,Atoka County,1861,Sherman
+121,74957,34.446667000000005,-93.535,Smithville,OK,McCurtain County,2284,Fort Smith
+122,71943,34.446667000000005,-92.285,Glenwood,AR,Pike County,2204,Bryant
+123,72065,34.446667000000005,-91.035,Hensley,AR,Saline County,2204,Bryant
+124,72366,34.446667000000005,-89.785,Marvell,AR,Phillips County,1169,Horn Lake
+125,38619,34.446667000000005,-88.535,Como,MS,Panola County,2442,Olive Branch West
+126,38855,34.446667000000005,-87.285,Mantachie,MS,Itawamba County,1322,Florence
+127,35650,34.446667000000005,-86.035,Moulton,AL,Lawrence County,2084,Decatur
+128,35975,34.446667000000005,-84.785,Groveoak,AL,DeKalb County,1367,Huntsville South
+129,30139,34.446667000000005,-83.535,Fairmount,GA,Gordon County,969,Cartersville
+130,30510,34.446667000000005,-82.285,Alto,GA,Habersham County,796,Gainesville
+131,29638,34.446667000000005,-81.035,Donalds,SC,Abbeville County,1198,Anderson
+132,29014,34.446667000000005,-79.785,Blackstock,SC,Chester County,1371,Rock Hill
+133,29593,34.446667000000005,-78.535,Society Hill,SC,Darlington County,1452,Florence
+134,28434,34.446667000000005,-77.285,Council,NC,Bladen County,1107,Wilmington
+135,28460,34.446667000000005,-76.035,Sneads Ferry,NC,Onslow County,1226,Jacksonville
+136,93428,35.696667000000005,-119.785,Cambria,CA,San Luis Obispo County,1120,Paso Robles
+137,93249,35.696667000000005,-118.535,Lost Hills,CA,Kern County,1906,Hanford
+138,93285,35.696667000000005,-117.285,Wofford Heights,CA,Kern County,614,Bakersfield NE
+139,93562,35.696667000000005,-116.035,Trona,CA,San Bernardino County,2260,Apple Valley North
+140,89005,35.696667000000005,-113.535,Boulder City,NV,Clark County,2404,Henderson Lake Mead Pkwy
+141,86434,35.696667000000005,-112.285,Peach Springs,AZ,Mohave County,2368,Bullhead City
+142,86046,35.696667000000005,-111.035,Williams,AZ,Coconino County,935,Flagstaff
+143,86004,35.696667000000005,-109.785,Flagstaff,AZ,Coconino County,935,Flagstaff
+144,86505,35.696667000000005,-108.535,Ganado,AZ,Apache County,0,
+145,87312,35.696667000000005,-107.285,Continental Divide,NM,McKinley County,952,Farmington
+146,87013,35.696667000000005,-106.035,Cuba,NM,Sandoval County,1117,Rio Rancho
+147,87506,35.696667000000005,-104.785,Santa Fe,NM,Santa Fe County,1034,Santa Fe
+148,87750,35.696667000000005,-103.535,Valmora,NM,Mora County,1034,Santa Fe
+149,87733,35.696667000000005,-102.285,Mosquero,NM,Harding County,0,
+150,79018,35.696667000000005,-101.035,Channing,TX,Hartley County,221,Amarillo
+151,79080,35.696667000000005,-99.785,Skellytown,TX,Carson County,221,Amarillo
+152,73660,35.696667000000005,-98.535,Reydon,OK,Roger Mills County,0,
+153,73040,35.696667000000005,-97.285,Geary,OK,Blaine County,2460,Yukon
+154,73007,35.696667000000005,-96.035,Arcadia,OK,Oklahoma County,1398,Edmond
+155,74447,35.696667000000005,-94.785,Okmulgee,OK,Okmulgee County,2542,Tulsa South
+156,74931,35.696667000000005,-93.535,Bunch,OK,Adair County,2284,Fort Smith
+157,72854,35.696667000000005,-92.285,Ozone,AR,Johnson County,1470,Fayetteville
+158,72088,35.696667000000005,-91.035,Fairfield Bay,AR,Van Buren County,1891,Conway
+159,72421,35.696667000000005,-89.785,Cash,AR,Craighead County,1919,Jonesboro
+160,38063,35.696667000000005,-88.535,Ripley,TN,Lauderdale County,1030,Memphis NE
+161,38345,35.696667000000005,-87.285,Huron,TN,Henderson County,921,Jackson
+162,38454,35.696667000000005,-86.035,Duck River,TN,Hickman County,2362,Spring Hill
+163,37026,35.696667000000005,-84.785,Bradyville,TN,Cannon County,1126,Murfreesboro
+164,37880,35.696667000000005,-83.535,Ten Mile,TN,Meigs County,1370,Farragut
+165,37738,35.696667000000005,-82.285,Gatlinburg,TN,Sevier County,1250,Maryville
+166,28711,35.696667000000005,-81.035,Black Mountain,NC,Buncombe County,1807,Asheville
+167,28609,35.696667000000005,-79.785,Catawba,NC,Catawba County,1505,Mooresville
+168,27203,35.696667000000005,-78.535,Asheboro,NC,Randolph County,1079,High Point
+169,27610,35.696667000000005,-77.285,Raleigh,NC,Wake County,2111,Knightdale
+170,27884,35.696667000000005,-76.035,Stokes,NC,Pitt County,1022,Greenville
+171,27953,35.696667000000005,-74.785,Manns Harbor,NC,Dare County,2203,Hillcrest
+172,95017,36.946667000000005,-121.035,Davenport,CA,Santa Cruz County,2795,Capitola
+173,93635,36.946667000000005,-119.785,Los Banos,CA,Merced County,2359,Los Banos
+174,93730,36.946667000000005,-118.535,Fresno,CA,Fresno County,911,Blackstone and Nees Ave
+175,93628,36.946667000000005,-117.285,Hume,CA,Fresno County,2469,Visalia North
+176,89020,36.946667000000005,-114.785,Amargosa Valley,NV,Nye County,1462,Las Vegas Centennial Hills
+177,84780,36.946667000000005,-112.285,Washington,UT,Washington County,1357,St George
+178,84741,36.946667000000005,-111.035,Kanab,UT,Kane County,1357,St George
+179,86514,36.946667000000005,-108.535,Teec Nos Pos,AZ,Apache County,952,Farmington
+180,87421,36.946667000000005,-107.285,Waterflow,NM,San Juan County,952,Farmington
+181,87419,36.946667000000005,-106.035,Navajo Dam,NM,San Juan County,952,Farmington
+182,81120,36.946667000000005,-104.785,Antonito,CO,Conejos County,0,
+183,81091,36.946667000000005,-103.535,Weston,CO,Las Animas County,618,Pueblo
+184,88419,36.946667000000005,-102.285,Folsom,NM,Union County,0,
+185,73947,36.946667000000005,-101.035,Keyes,OK,Cimarron County,0,
+186,73951,36.946667000000005,-99.785,Tyrone,OK,Texas County,906,Garden City
+187,73855,36.946667000000005,-98.535,Rosston,OK,Harper County,906,Garden City
+188,73722,36.946667000000005,-97.285,Burlington,OK,Alfalfa County,1943,Wichita Maple
+189,74632,36.946667000000005,-96.035,Braman,OK,Kay County,2448,Derby
+190,74022,36.946667000000005,-94.785,Copan,OK,Washington County,2095,Owasso
+191,74360,36.946667000000005,-93.535,Picher,OK,Ottawa County,774,Joplin
+192,65633,36.946667000000005,-92.285,Crane,MO,Stone County,2098,Branson
+193,65768,36.946667000000005,-91.035,Vanzant,MO,Douglas County,2098,Branson
+194,63965,36.946667000000005,-89.785,Van Buren,MO,Carter County,1919,Jonesboro
+195,63735,36.946667000000005,-88.535,Bell City,MO,Stoddard County,992,Cape Girardeau
+196,42082,36.946667000000005,-87.285,Symsonia,KY,Graves County,674,Marion
+197,42220,36.946667000000005,-86.035,Elkton,KY,Todd County,959,Clarksville
+198,42156,36.946667000000005,-84.785,Lucas,KY,Barren County,958,Bowling Green
+199,42544,36.946667000000005,-83.535,Nancy,KY,Pulaski County,366,Lexington
+200,40913,36.946667000000005,-82.285,Beverly,KY,Clay County,2332,Kingsport
+201,24224,36.946667000000005,-81.035,Castlewood,VA,Russell County,2308,Bristol
+202,24382,36.946667000000005,-79.785,Wytheville,VA,Wythe County,1292,Christiansburg
+203,24092,36.946667000000005,-78.535,Glade Hill,VA,Franklin County,1162,Roanoke
+204,23937,36.946667000000005,-77.285,Drakes Branch,VA,Charlotte County,1275,Lynchburg
+205,23882,36.946667000000005,-76.035,Stony Creek,VA,Sussex County,1016,Colonial Heights
+206,23459,36.946667000000005,-74.785,Virginia Beach,VA,Virginia Beach city,1047,Hilltop
+207,94559,38.196667000000005,-121.035,Napa,CA,Napa County,1026,Napa
+208,95240,38.196667000000005,-119.785,Lodi,CA,San Joaquin County,853,Lodi
+209,95364,38.196667000000005,-118.535,Pinecrest,CA,Tuolumne County,1239,Carson City
+210,89420,38.196667000000005,-117.285,Luning,NV,Mineral County,1239,Carson City
+211,89049,38.196667000000005,-114.785,Tonopah,NV,Nye County,0,
+212,89043,38.196667000000005,-113.535,Pioche,NV,Lincoln County,1357,St George
+213,84751,38.196667000000005,-112.285,Milford,UT,Beaver County,1357,St George
+214,84732,38.196667000000005,-111.035,Greenwich,UT,Piute County,0,
+215,84773,38.196667000000005,-109.785,Teasdale,UT,Wayne County,0,
+216,81422,38.196667000000005,-107.285,Naturita,CO,Montrose County,2343,Montrose
+217,81243,38.196667000000005,-106.035,Powderhorn,CO,Gunnison County,2343,Montrose
+218,81155,38.196667000000005,-104.785,Villa Grove,CO,Saguache County,739,S Colorado Springs
+219,81005,38.196667000000005,-103.535,Pueblo,CO,Pueblo County,618,Pueblo
+220,81050,38.196667000000005,-102.285,La Junta,CO,Otero County,618,Pueblo
+221,81047,38.196667000000005,-101.035,Holly,CO,Prowers County,906,Garden City
+222,67851,38.196667000000005,-99.785,Holcomb,KS,Finney County,906,Garden City
+223,67849,38.196667000000005,-98.535,Hanston,KS,Hodgeman County,906,Garden City
+224,67545,38.196667000000005,-97.285,Hudson,KS,Stafford County,905,Salina
+225,67151,38.196667000000005,-96.035,Walton,KS,Harvey County,1944,Wichita NE
+226,66854,38.196667000000005,-94.785,Hartford,KS,Lyon County,355,Topeka
+227,66075,38.196667000000005,-93.535,Pleasanton,KS,Linn County,1538,Belton
+228,65355,38.196667000000005,-92.285,Warsaw,MO,Benton County,1914,Osage Beach
+229,65082,38.196667000000005,-91.035,Tuscumbia,MO,Miller County,1914,Osage Beach
+230,63080,38.196667000000005,-89.785,Sullivan,MO,Franklin County,2255,Washington
+231,62217,38.196667000000005,-88.535,Baldwin,IL,Randolph County,2330,Belleville
+232,62828,38.196667000000005,-87.285,Dahlgren,IL,Hamilton County,674,Marion
+233,47619,38.196667000000005,-86.035,Lynnville,IN,Warrick County,1481,Evansville Lloyd Expressway
+234,47160,38.196667000000005,-84.785,New Middletown,IN,Harrison County,139,New Albany
+235,40347,38.196667000000005,-83.535,Midway,KY,Woodford County,3313,Lexington Campus
+236,40351,38.196667000000005,-82.285,Morehead,KY,Rowan County,1094,Lexington SE
+237,25512,38.196667000000005,-81.035,East Lynn,WV,Wayne County,1478,Barboursville
+238,25938,38.196667000000005,-79.785,Victor,WV,Fayette County,1261,Charleston
+239,24484,38.196667000000005,-78.535,Warm Springs,VA,Bath County,2294,Waynesboro
+240,22936,38.196667000000005,-77.285,Earlysville,VA,Albemarle County,1858,Charlottesville
+241,22538,38.196667000000005,-76.035,Rappahannock Academy,VA,Caroline County,2138,Fredericksburg S
+242,21672,38.196667000000005,-74.785,Toddville,MD,Dorchester County,1258,Lexington Park
+243,95437,39.446667000000005,-122.285,Fort Bragg,CA,Mendocino County,2804,Santa Rosa North
+244,95988,39.446667000000005,-121.035,Willows,CA,Glenn County,317,Chico
+245,95960,39.446667000000005,-119.785,North San Juan,CA,Nevada County,1097,Auburn
+246,89502,39.446667000000005,-118.535,Reno,NV,Washoe County,1363,Reno South
+247,89406,39.446667000000005,-117.285,Fallon,NV,Churchill County,2472,Sparks South
+248,89310,39.446667000000005,-116.035,Austin,NV,Lander County,0,
+249,89316,39.446667000000005,-114.785,Eureka,NV,Eureka County,0,
+250,89301,39.446667000000005,-113.535,Ely,NV,White Pine County,0,
+251,84648,39.446667000000005,-111.035,Nephi,UT,Juab County,3316,Provo State St and Bulldog Blvd UT
+252,84521,39.446667000000005,-109.785,Elmo,UT,Emery County,3316,Provo State St and Bulldog Blvd UT
+253,81630,39.446667000000005,-107.285,De Beque,CO,Mesa County,93,Grand Junction
+254,81601,39.446667000000005,-106.035,Glenwood Springs,CO,Garfield County,2029,Glenwood Springs
+255,80424,39.446667000000005,-104.785,Breckenridge,CO,Summit County,1525,Silverthorne
+256,80108,39.446667000000005,-103.535,Castle Rock,CO,Douglas County,1326,Castle Rock
+257,80818,39.446667000000005,-102.285,Genoa,CO,Lincoln County,1976,Aurora Saddle Rock
+258,80807,39.446667000000005,-101.035,Burlington,CO,Kit Carson County,0,
+259,67701,39.446667000000005,-99.785,Colby,KS,Thomas County,906,Garden City
+260,67642,39.446667000000005,-98.535,Hill City,KS,Graham County,0,
+261,67437,39.446667000000005,-97.285,Downs,KS,Osborne County,905,Salina
+262,67432,39.446667000000005,-96.035,Clay Center,KS,Clay County,1821,Manhattan
+263,66540,39.446667000000005,-94.785,Soldier,KS,Jackson County,355,Topeka
+264,64018,39.446667000000005,-93.535,Camden Point,MO,Platte County,2423,Kansas City NW
+265,64633,39.446667000000005,-92.285,Carrollton,MO,Carroll County,2525,Blue Springs
+266,65263,39.446667000000005,-91.035,Madison,MO,Monroe County,239,Columbia
+267,62370,39.446667000000005,-89.785,Rockport,IL,Pike County,2345,Wentzville
+268,62640,39.446667000000005,-88.535,Girard,IL,Macoupin County,670,Springfield
+269,61928,39.446667000000005,-87.285,Gays,IL,Moultrie County,1951,Decatur
+270,47803,39.446667000000005,-86.035,Terre Haute,IN,Vigo County,1878,Bloomington
+271,46131,39.446667000000005,-84.785,Franklin,IN,Johnson County,1364,Greenwood South
+272,47010,39.446667000000005,-83.535,Bath,IN,Franklin County,1946,Fairfield Township
+273,45135,39.446667000000005,-82.285,Leesburg,OH,Highland County,2486,South Lebanon
+274,45764,39.446667000000005,-81.035,Nelsonville,OH,Athens County,990,Lancaster
+275,26146,39.446667000000005,-79.785,Friendly,WV,Tyler County,1828,Bridgeport
+276,26444,39.446667000000005,-78.535,Tunnelton,WV,Preston County,1949,Morgantown
+277,25437,39.446667000000005,-77.285,Points,WV,Hampshire County,2379,Winchester North
+278,21701,39.446667000000005,-76.035,Frederick,MD,Frederick County,1137,Frederick
+279,21919,39.446667000000005,-74.785,Earleville,MD,Cecil County,1043,Aberdeen
+280,95527,40.696667000000005,-122.285,Burnt Ranch,CA,Trinity County,1421,Eureka
+281,96003,40.696667000000005,-121.035,Redding,CA,Shasta County,615,Redding
+282,96137,40.696667000000005,-119.785,Westwood,CA,Lassen County,317,Chico
+283,89418,40.696667000000005,-117.285,Imlay,NV,Pershing County,0,
+284,89820,40.696667000000005,-116.035,Battle Mountain,NV,Lander County,0,
+285,89822,40.696667000000005,-114.785,Carlin,NV,Elko County,0,
+286,89835,40.696667000000005,-113.535,Wells,NV,Elko County,0,
+287,84044,40.696667000000005,-111.035,Magna,UT,Salt Lake County,2609,West Valley City
+288,84036,40.696667000000005,-109.785,Kamas,UT,Summit County,1751,Fort Union
+289,84046,40.696667000000005,-108.535,Manila,UT,Daggett County,0,
+290,81640,40.696667000000005,-107.285,Maybell,CO,Moffat County,2029,Glenwood Springs
+291,81639,40.696667000000005,-106.035,Hayden,CO,Routt County,2029,Glenwood Springs
+292,80512,40.696667000000005,-104.785,Bellvue,CO,Larimer County,3416,Fort Collins Old Town
+293,80650,40.696667000000005,-103.535,Pierce,CO,Weld County,2403,Fort Collins East
+294,80741,40.696667000000005,-102.285,Merino,CO,Logan County,1813,Greeley
+295,80721,40.696667000000005,-101.035,Amherst,CO,Phillips County,0,
+296,69169,40.696667000000005,-99.785,Wallace,NE,Lincoln County,0,
+297,68976,40.696667000000005,-98.535,Smithfield,NE,Gosper County,857,Kearney
+298,68955,40.696667000000005,-97.285,Juniata,NE,Adams County,857,Kearney
+299,68359,40.696667000000005,-96.035,Friend,NE,Saline County,2303,Lincoln SW
+300,68346,40.696667000000005,-94.785,Dunbar,NE,Otoe County,879,Lincoln South
+301,50833,40.696667000000005,-93.535,Bedford,IA,Taylor County,1977,St Joseph
+302,50103,40.696667000000005,-92.285,Garden Grove,IA,Decatur County,803,South Des Moines
+303,52584,40.696667000000005,-91.035,Pulaski,IA,Davis County,860,Burlington
+304,61454,40.696667000000005,-89.785,Lomax,IL,Henderson County,860,Burlington
+305,61536,40.696667000000005,-88.535,Hanna City,IL,Peoria County,871,Peoria
+306,61739,40.696667000000005,-87.285,Fairbury,IL,Livingston County,137,Bloomington Normal
+307,47977,40.696667000000005,-86.035,Remington,IN,Jasper County,3309,West Lafayette State Street
+308,46914,40.696667000000005,-84.785,Bunker Hill,IN,Miami County,111,Kokomo
+309,45898,40.696667000000005,-83.535,Willshire,OH,Van Wert County,1933,Ft Wayne NE
+310,45843,40.696667000000005,-82.285,Forest,OH,Hardin County,1381,Mansfield
+311,44864,40.696667000000005,-81.035,Perrysville,OH,Ashland County,1381,Mansfield
+312,44657,40.696667000000005,-79.785,Minerva,OH,Stark County,794,Canton
+313,16055,40.696667000000005,-78.535,Sarver,PA,Butler County,2262,Richland Twp North
+314,16640,40.696667000000005,-77.285,Flinton,PA,Cambria County,1160,Altoona
+315,17812,40.696667000000005,-76.035,Beaver Springs,PA,Snyder County,2439,Selinsgrove
+316,17960,40.696667000000005,-74.785,New Ringgold,PA,Schuylkill County,2302,Muhlenberg Township
+317,96039,41.946667000000005,-122.285,Happy Camp,CA,Siskiyou County,613,Medford
+318,96064,41.946667000000005,-121.035,Montague,CA,Siskiyou County,613,Medford
+319,97632,41.946667000000005,-119.785,Malin,OR,Klamath County,613,Medford
+320,96115,41.946667000000005,-118.535,Lake City,CA,Modoc County,0,
+321,97710,41.946667000000005,-117.285,Fields,OR,Harney County,0,
+322,83302,41.946667000000005,-113.535,Rogerson,ID,Twin Falls County,699,Twin Falls
+323,83342,41.946667000000005,-112.285,Malta,ID,Cassia County,699,Twin Falls
+324,84331,41.946667000000005,-111.035,Portage,UT,Box Elder County,1753,Riverdale
+325,84038,41.946667000000005,-109.785,Laketown,UT,Rich County,1753,Riverdale
+326,82935,41.946667000000005,-108.535,Green River,WY,Sweetwater County,0,
+327,82334,41.946667000000005,-106.035,Sinclair,WY,Carbon County,164,Casper
+328,82329,41.946667000000005,-104.785,Medicine Bow,WY,Carbon County,164,Casper
+329,82201,41.946667000000005,-103.535,Wheatland,WY,Platte County,224,Cheyenne
+330,69356,41.946667000000005,-102.285,Minatare,NE,Scotts Bluff County,831,Scottsbluff
+331,69335,41.946667000000005,-101.035,Bingham,NE,Sheridan County,831,Scottsbluff
+332,69152,41.946667000000005,-99.785,Mullen,NE,Hooker County,0,
+333,68821,41.946667000000005,-98.535,Brewster,NE,Blaine County,857,Kearney
+334,68622,41.946667000000005,-97.285,Bartlett,NE,Wheeler County,856,Norfolk
+335,68779,41.946667000000005,-96.035,Stanton,NE,Stanton County,856,Norfolk
+336,51523,41.946667000000005,-94.785,Blencoe,IA,Monona County,1800,Sioux City
+337,51440,41.946667000000005,-93.535,Dedham,IA,Carroll County,878,Fort Dodge
+338,50046,41.946667000000005,-92.285,Cambridge,IA,Story County,1170,Ames
+339,52208,41.946667000000005,-91.035,Belle Plaine,IA,Benton County,1771,Cedar Rapids South
+340,52216,41.946667000000005,-89.785,Clarence,IA,Cedar County,3374,Iowa City Downtown
+341,61051,41.946667000000005,-88.535,Milledgeville,IL,Carroll County,810,Rockford
+342,60119,41.946667000000005,-87.285,Elburn,IL,Kane County,839,Batavia
+343,60611,41.946667000000005,-86.035,Chicago,IL,Cook County,3207,Chicago Streeterville
+344,49031,41.946667000000005,-84.785,Cassopolis,MI,Cass County,1445,Mishawaka
+345,49227,41.946667000000005,-83.535,Allen,MI,Hillsdale County,673,Jackson
+346,48161,41.946667000000005,-82.285,Monroe,MI,Monroe County,622,Toledo Alexis Road
+347,44057,41.946667000000005,-79.785,Madison,OH,Lake County,2322,Mentor
+348,16442,41.946667000000005,-78.535,Wattsburg,PA,Erie County,1287,Erie
+349,16727,41.946667000000005,-77.285,Derrick City,PA,McKean County,1057,Orchard Park
+350,16920,41.946667000000005,-76.035,Elkland,PA,Tioga County,2158,Big Flats
+351,18830,41.946667000000005,-74.785,Little Meadows,PA,Susquehanna County,1056,Binghamton Vestal
+352,97411,43.196667000000005,-123.535,Bandon,OR,Coos County,1405,Eugene
+353,97471,43.196667000000005,-122.285,Roseburg,OR,Douglas County,1405,Eugene
+354,97443,43.196667000000005,-121.035,Glide,OR,Douglas County,1405,Eugene
+355,97640,43.196667000000005,-119.785,Summer Lake,OR,Lake County,766,Bend
+356,97758,43.196667000000005,-118.535,Riley,OR,Harney County,766,Bend
+357,97722,43.196667000000005,-117.285,Diamond,OR,Harney County,0,
+358,97901,43.196667000000005,-116.035,Adrian,OR,Malheur County,2206,Nampa
+359,83648,43.196667000000005,-114.785,Mountain Home A F B,ID,Elmore County,617,Boise
+360,83330,43.196667000000005,-113.535,Gooding,ID,Gooding County,699,Twin Falls
+361,83320,43.196667000000005,-112.285,Carey,ID,Blaine County,699,Twin Falls
+362,83221,43.196667000000005,-111.035,Blackfoot,ID,Bingham County,1082,Idaho Falls
+363,83128,43.196667000000005,-109.785,Alpine,WY,Lincoln County,1082,Idaho Falls
+364,82925,43.196667000000005,-108.535,Cora,WY,Sublette County,0,
+365,82501,43.196667000000005,-107.285,Riverton,WY,Fremont County,164,Casper
+366,82630,43.196667000000005,-106.035,Arminto,WY,Natrona County,164,Casper
+367,82643,43.196667000000005,-104.785,Midwest,WY,Natrona County,164,Casper
+368,82222,43.196667000000005,-103.535,Lance Creek,WY,Niobrara County,164,Casper
+369,57747,43.196667000000005,-102.285,Hot Springs,SD,Fall River County,2457,Rapid City
+370,57794,43.196667000000005,-101.035,Wounded Knee,SD,Shannon County,2457,Rapid City
+371,57572,43.196667000000005,-99.785,Saint Francis,SD,Todd County,0,
+372,57528,43.196667000000005,-98.535,Colome,SD,Tripp County,0,
+373,57356,43.196667000000005,-97.285,Lake Andes,SD,Charles Mix County,76,Sioux Falls
+374,57070,43.196667000000005,-96.035,Viborg,SD,Turner County,76,Sioux Falls
+375,51234,43.196667000000005,-94.785,Boyden,IA,Sioux County,2540,Sioux Falls East
+376,51342,43.196667000000005,-93.535,Graettinger,IA,Palo Alto County,878,Fort Dodge
+377,50434,43.196667000000005,-92.285,Fertile,IA,Worth County,804,Mason City
+378,50659,43.196667000000005,-91.035,New Hampton,IA,Chickasaw County,2526,Cedar Falls
+379,54626,43.196667000000005,-89.785,Eastman,WI,Crawford County,620,LaCrosse
+380,53560,43.196667000000005,-88.535,Mazomanie,WI,Dane County,1060,Madison West
+381,53036,43.196667000000005,-87.285,Ixonia,WI,Jefferson County,864,Delafield
+382,49451,43.196667000000005,-84.785,Ravenna,MI,Muskegon County,2327,Norton Shores
+383,48856,43.196667000000005,-83.535,Middleton,MI,Gratiot County,924,Mt Pleasant
+384,48463,43.196667000000005,-82.285,Otisville,MI,Genesee County,350,Flint
+385,48059,43.196667000000005,-81.035,Fort Gratiot,MI,St. Clair County,632,Port Huron
+386,14105,43.196667000000005,-77.285,Middleport,NY,Niagara County,1011,Eastern Hills
+387,14519,43.196667000000005,-76.035,Ontario,NY,Wayne County,2038,Webster
+388,13039,43.196667000000005,-74.785,Cicero,NY,Onondaga County,2295,Cicero
+389,97324,44.446667000000005,-122.285,Alsea,OR,Benton County,1405,Eugene
+390,97329,44.446667000000005,-121.035,Cascadia,OR,Linn County,609,Albany
+391,97760,44.446667000000005,-119.785,Terrebonne,OR,Jefferson County,766,Bend
+392,97825,44.446667000000005,-118.535,Dayville,OR,Grant County,766,Bend
+393,97869,44.446667000000005,-117.285,Prairie City,OR,Grant County,0,
+394,97907,44.446667000000005,-116.035,Huntington,OR,Baker County,2206,Nampa
+395,83632,44.446667000000005,-114.785,Indian Valley,ID,Adams County,1230,Boise Eagle Road
+396,83278,44.446667000000005,-113.535,Stanley,ID,Custer County,617,Boise
+397,83464,44.446667000000005,-112.285,Leadore,ID,Lemhi County,1082,Idaho Falls
+398,83446,44.446667000000005,-111.035,Spencer,ID,Clark County,1082,Idaho Falls
+399,83429,44.446667000000005,-109.785,Island Park,ID,Fremont County,1082,Idaho Falls
+400,82411,44.446667000000005,-107.285,Burlington,WY,Big Horn County,171,Billings West
+401,82842,44.446667000000005,-106.035,Story,WY,Sheridan County,0,
+402,82831,44.446667000000005,-104.785,Arvada,WY,Sheridan County,0,
+403,82721,44.446667000000005,-103.535,Moorcroft,WY,Crook County,2457,Rapid City
+404,57793,44.446667000000005,-102.285,Whitewood,SD,Lawrence County,2457,Rapid City
+405,57748,44.446667000000005,-101.035,Howes,SD,Meade County,2457,Rapid City
+406,57537,44.446667000000005,-99.785,Hayes,SD,Stanley County,0,
+407,57536,44.446667000000005,-98.535,Harrold,SD,Hughes County,848,Aberdeen
+408,57384,44.446667000000005,-97.285,Wolsey,SD,Beadle County,848,Aberdeen
+409,57212,44.446667000000005,-96.035,Arlington,SD,Kingsbury County,859,Watertown
+410,56157,44.446667000000005,-94.785,Lynd,MN,Lyon County,859,Watertown
+411,56266,44.446667000000005,-93.535,Morgan,MN,Redwood County,1210,Hutchinson
+412,56069,44.446667000000005,-92.285,Montgomery,MN,Le Sueur County,1211,Northfield
+413,55041,44.446667000000005,-91.035,Lake City,MN,Wabasha County,1522,Red Wing
+414,54611,44.446667000000005,-89.785,Alma Center,WI,Jackson County,1774,Eau Claire
+415,54475,44.446667000000005,-88.535,Rudolph,WI,Wood County,806,Stevens Point
+416,54106,44.446667000000005,-87.285,Black Creek,WI,Outagamie County,238,Appleton
+417,54201,44.446667000000005,-86.035,Algoma,WI,Kewaunee County,1246,Sturgeon Bay
+418,49645,44.446667000000005,-84.785,Kaleva,MI,Manistee County,671,Traverse City
+419,49667,44.446667000000005,-83.535,Merritt,MI,Missaukee County,671,Traverse City
+420,48750,44.446667000000005,-82.285,Oscoda,MI,Iosco County,672,Midland
+421,13640,44.446667000000005,-74.785,Wellesley Island,NY,Jefferson County,2253,Watertown
+422,97107,45.696667000000005,-122.285,Bay City,OR,Tillamook County,362,Hillsboro
+423,98671,45.696667000000005,-121.035,Washougal,WA,Clark County,1406,Fairview
+424,98613,45.696667000000005,-119.785,Centerville,WA,Klickitat County,760,Yakima
+425,97818,45.696667000000005,-118.535,Boardman,OR,Morrow County,2314,Richland
+426,97810,45.696667000000005,-117.285,Adams,OR,Umatilla County,830,Kennewick
+427,97828,45.696667000000005,-116.035,Enterprise,OR,Wallowa County,3407,Moscow West Pullman Road
+428,83554,45.696667000000005,-114.785,White Bird,ID,Idaho County,3407,Moscow West Pullman Road
+429,83525,45.696667000000005,-113.535,Elk City,ID,Idaho County,3407,Moscow West Pullman Road
+430,59761,45.696667000000005,-112.285,Wisdom,MT,Beaverhead County,885,Missoula
+431,59751,45.696667000000005,-111.035,Silver Star,MT,Madison County,1237,Bozeman
+432,59715,45.696667000000005,-109.785,Bozeman,MT,Gallatin County,1237,Bozeman
+433,59033,45.696667000000005,-108.535,Greycliff,MT,Sweet Grass County,171,Billings West
+434,59102,45.696667000000005,-107.285,Billings,MT,Yellowstone County,171,Billings West
+435,59031,45.696667000000005,-106.035,Garryowen,MT,Big Horn County,1333,Billings Heights
+436,59003,45.696667000000005,-104.785,Ashland,MT,Rosebud County,0,
+437,59324,45.696667000000005,-103.535,Ekalaka,MT,Carter County,0,
+438,57720,45.696667000000005,-102.285,Buffalo,SD,Harding County,0,
+439,57638,45.696667000000005,-101.035,Lemmon,SD,Perkins County,2194,Bismarck
+440,57642,45.696667000000005,-99.785,Mc Laughlin,SD,Corson County,2194,Bismarck
+441,57646,45.696667000000005,-98.535,Mound City,SD,Campbell County,848,Aberdeen
+442,57441,45.696667000000005,-97.285,Frederick,SD,Brown County,848,Aberdeen
+443,57247,45.696667000000005,-96.035,Lake City,SD,Marshall County,848,Aberdeen
+444,56235,45.696667000000005,-94.785,Donnelly,MN,Stevens County,821,Alexandria
+445,56352,45.696667000000005,-93.535,Melrose,MN,Stearns County,215,St Cloud Crossroads
+446,55017,45.696667000000005,-92.285,Dalbo,MN,Isanti County,1303,Cambridge
+447,54837,45.696667000000005,-91.035,Frederic,WI,Polk County,1303,Cambridge
+448,54862,45.696667000000005,-89.785,Ojibwa,WI,Sawyer County,1774,Eau Claire
+449,54531,45.696667000000005,-88.535,Hazelhurst,WI,Oneida County,364,Wausau
+450,54103,45.696667000000005,-87.285,Armstrong Creek,WI,Forest County,364,Wausau
+451,49896,45.696667000000005,-86.035,Wilson,MI,Menominee County,1246,Sturgeon Bay
+452,49782,45.696667000000005,-84.785,Beaver Island,MI,Charlevoix County,671,Traverse City
+453,49755,45.696667000000005,-83.535,Levering,MI,Emmet County,671,Traverse City
+454,49726,45.696667000000005,-82.285,Drummond Island,MI,Chippewa County,0,
+455,98537,46.946667000000005,-122.285,Cosmopolis,WA,Grays Harbor County,607,Olympia
+456,98328,46.946667000000005,-121.035,Eatonville,WA,Pierce County,2136,Puyallup South
+457,98929,46.946667000000005,-119.785,Naches,WA,Yakima County,0,
+458,99357,46.946667000000005,-118.535,Royal City,WA,Grant County,760,Yakima
+459,99341,46.946667000000005,-117.285,Lind,WA,Adams County,830,Kennewick
+460,99161,46.946667000000005,-116.035,Palouse,WA,Whitman County,3407,Moscow West Pullman Road
+461,83812,46.946667000000005,-114.785,Clarkia,ID,Shoshone County,3407,Moscow West Pullman Road
+462,59872,46.946667000000005,-113.535,Superior,MT,Mineral County,885,Missoula
+463,59823,46.946667000000005,-112.285,Bonner,MT,Missoula County,885,Missoula
+464,59633,46.946667000000005,-111.035,Canyon Creek,MT,Lewis and Clark County,1282,Helena
+465,59463,46.946667000000005,-109.785,Monarch,MT,Cascade County,253,Great Falls
+466,59464,46.946667000000005,-108.535,Moore,MT,Fergus County,253,Great Falls
+467,59032,46.946667000000005,-107.285,Grass Range,MT,Fergus County,1333,Billings Heights
+468,59077,46.946667000000005,-106.035,Sand Springs,MT,Garfield County,0,
+469,59214,46.946667000000005,-104.785,Brockway,MT,McCone County,0,
+470,59326,46.946667000000005,-103.535,Fallon,MT,Prairie County,0,
+471,58645,46.946667000000005,-102.285,Medora,ND,Billings County,0,
+472,58652,46.946667000000005,-101.035,Richardton,ND,Stark County,2194,Bismarck
+473,58530,46.946667000000005,-99.785,Center,ND,Oliver County,2194,Bismarck
+474,58428,46.946667000000005,-98.535,Dawson,ND,Kidder County,2194,Bismarck
+475,58481,46.946667000000005,-97.285,Spiritwood,ND,Barnes County,61,Fargo
+476,58079,46.946667000000005,-96.035,Wheatland,ND,Cass County,61,Fargo
+477,56554,46.946667000000005,-94.785,Lake Park,MN,Becker County,658,Moorhead
+478,56467,46.946667000000005,-93.535,Nevis,MN,Hubbard County,657,Bemidji
+479,55748,46.946667000000005,-92.285,Hill City,MN,Aitkin County,904,Grand Rapids
+480,55779,46.946667000000005,-91.035,Saginaw,MN,St. Louis County,4,Duluth
+481,54814,46.946667000000005,-89.785,Bayfield,WI,Bayfield County,4,Duluth
+482,49953,46.946667000000005,-88.535,Ontonagon,MI,Ontonagon County,1334,Marquette
+483,49916,46.946667000000005,-87.285,Chassell,MI,Houghton County,1334,Marquette
+484,49855,46.946667000000005,-86.035,Marquette,MI,Marquette County,1334,Marquette
+485,98381,48.196667000000005,-123.535,Sekiu,WA,Clallam County,606,Silverdale
+486,98362,48.196667000000005,-122.285,Port Angeles,WA,Clallam County,606,Silverdale
+487,98292,48.196667000000005,-121.035,Stanwood,WA,Snohomish County,2192,Marysville
+488,98237,48.196667000000005,-119.785,Concrete,WA,Skagit County,696,Burlington
+489,98812,48.196667000000005,-118.535,Brewster,WA,Okanogan County,1064,Wenatchee
+490,99138,48.196667000000005,-117.285,Inchelium,WA,Ferry County,636,North Spokane
+491,99156,48.196667000000005,-116.035,Newport,WA,Pend Oreille County,636,North Spokane
+492,59844,48.196667000000005,-114.785,Heron,MT,Sanders County,679,Coeur d'Alene
+493,59925,48.196667000000005,-113.535,Marion,MT,Flathead County,1540,Kalispell
+494,59901,48.196667000000005,-112.285,Kalispell,MT,Flathead County,1540,Kalispell
+495,59467,48.196667000000005,-111.035,Pendroy,MT,Teton County,253,Great Falls
+496,59420,48.196667000000005,-109.785,Carter,MT,Chouteau County,253,Great Falls
+497,59521,48.196667000000005,-108.535,Box Elder,MT,Hill County,253,Great Falls
+498,59524,48.196667000000005,-107.285,Dodson,MT,Phillips County,0,
+499,59538,48.196667000000005,-106.035,Malta,MT,Phillips County,0,
+500,59225,48.196667000000005,-104.785,Frazer,MT,Valley County,0,
+501,59213,48.196667000000005,-103.535,Brockton,MT,Richland County,0,
+502,58843,48.196667000000005,-102.285,Epping,ND,Williams County,85,Minot
+503,58769,48.196667000000005,-101.035,Palermo,ND,Mountrail County,85,Minot
+504,58768,48.196667000000005,-99.785,Norwich,ND,McHenry County,85,Minot
+505,58332,48.196667000000005,-98.535,Esmond,ND,Benson County,85,Minot
+506,58327,48.196667000000005,-97.285,Crary,ND,Ramsey County,1783,Grand Forks
+507,58261,48.196667000000005,-96.035,Minto,ND,Walsh County,1783,Grand Forks
+508,56701,48.196667000000005,-94.785,Thief River Falls,MN,Pennington County,1783,Grand Forks
+509,56685,48.196667000000005,-93.535,Waskish,MN,Beltrami County,657,Bemidji
+510,56627,48.196667000000005,-92.285,Big Falls,MN,Koochiching County,657,Bemidji
+511,55725,48.196667000000005,-91.035,Crane Lake,MN,St. Louis County,847,Virginia
+512,55605,48.196667000000005,-88.535,Grand Portage,MN,Cook County,0,
