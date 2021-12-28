@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useInput } from '../../hooks/input-hook';
 import { ShopSearchBar, ShopItem } from '../../components';
 import logo from '../../images/target.svg';
