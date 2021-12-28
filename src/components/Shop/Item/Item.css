@@ -1,3 +1,6 @@
-p {
+.wrapper h3 {
+    color: black;
+}
+.wrapper p {
     color: black;
 }

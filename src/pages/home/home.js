@@ -7,8 +7,6 @@ import './home.css';
 function Home() {
     const [currItem, setCurrItem] = useState(undefined);
     const [currMessage, setCurrMessage] = useState('Please Begin Your Search');
-    useEffect(() => {
-    }, []);
     const { value:query, setValue:setQuery, reset:resetQuery } = useInput('');
 
     const isTcin = (str) => {
@@ -29,10 +27,7 @@ function Home() {
         fetch(url).then(res => res.json()).then(data => {
             setCurrMessage(data.message)
             if (data.success) {
-                var item = {}
-                item['location_name'] = data.location_name
-                item['location_id'] = data.location_id
-                item['price'] = data.minCost
+                var item = JSON.parse(data.result)
                 setCurrItem(item);
             } else {
                 setCurrItem(undefined);
@@ -41,13 +36,16 @@ function Home() {
         });
     }
 
+    // useEffect(() => {
+    //     console.log(currItem);
+    // }, [currItem])
+
     return (
         <div className="App">
         <header className="App-header"> 
             <img src={logo} className="App-logo" alt="logo" />
             <ShopSearchBar handleSubmit={handleSubmit} searchQuery={query} setSearchQuery={setQuery}/>
-            <ShopItem item={currItem}/>
-            <p class="text">{currMessage}</p>
+            {currItem ? <ShopItem item={currItem}/> : <p class="text">{currMessage}</p>}
         </header>
         </div>
     );

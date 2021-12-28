@@ -31,6 +31,12 @@ def minCost(locations, item_id):
             minLocation = location
     return (minCost, minLocation)
 
+def getItemInfo(item_id, user_id):
+    STORE_ID = 1075
+    taskUrl = url %(item_id, user_id, STORE_ID)
+    res = requests.get(taskUrl)
+    return res.json()
+
 async def asyncGetPriceOfItem(session, url):
     async with session.get(url) as resp:
         json = await resp.json()
@@ -38,12 +44,9 @@ async def asyncGetPriceOfItem(session, url):
             return float(json['search_response']['items']['Item'][0]['price']['formatted_current_price'].split(' - ')[0][1:])
         return None
 
-async def asyncMinCost(tcin_tasks, item_id):
+async def asyncMinCost(tcin_tasks, item_id, user_id):
     async with aiohttp.ClientSession() as session:
-        #Gets the auth token from target for api requests
-        s = requests.session()
-        s.get('https://www.target.com')
-        user_id = s.cookies['visitorId']
+        
         zip_cache = Path(__file__).parent / "saved_zips.csv"
 
         df = pd.read_csv(zip_cache)
@@ -72,9 +75,8 @@ async def asyncMinCost(tcin_tasks, item_id):
                     minCost = prices[index]
                     minLocs['id'] = [locationId]
                     minLocs['name'] = [locationNames[index]]
-        items = db['items']
-        items.insert_one({'tcin': item_id, 'min_stores': minLocs, 'cost': minCost})
         tcin_tasks[item_id]['status'] = 'ended'
+        return minLocs, minCost
 
 # locationIds = asyncio.run(storeIDGenerator.getLocationsAsync(df['ZIP'], 100, 1))
     
