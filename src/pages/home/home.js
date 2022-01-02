@@ -1,16 +1,20 @@
 import React, { useState } from 'react';
 import { useInput } from '../../hooks/input-hook';
-import { ShopSearchBar, ShopItem } from '../../components';
+import { ShopSearchBar, ShopItem, Modal } from '../../components';
 import logo from '../../images/target.svg';
 import './home.css';
 
 function Home() {
     const [currItem, setCurrItem] = useState(undefined);
+    const [open, setOpen] = useState(false);
     const [currMessage, setCurrMessage] = useState('Please Begin Your Search');
     const { value:query, setValue:setQuery, reset:resetQuery } = useInput('');
 
     const isTcin = (str) => {
         return str.length === 8 && /^\d+$/.test(str);
+    }
+    const close = () => {
+        setOpen(false)
     }
     
     const handleSubmit = (evt) => {
@@ -32,21 +36,22 @@ function Home() {
             } else {
                 setCurrItem(undefined);
             }
+            setOpen(true);
             resetQuery();
         });
     }
 
-    // useEffect(() => {
-    //     console.log(currItem);
-    // }, [currItem])
-
     return (
         <div className="App">
-        <header className="App-header"> 
-            <img src={logo} className="App-logo" alt="logo" />
-            <ShopSearchBar handleSubmit={handleSubmit} searchQuery={query} setSearchQuery={setQuery}/>
-            {currItem ? <ShopItem item={currItem}/> : <p class="text">{currMessage}</p>}
-        </header>
+            <header className="App-header"> 
+                <div className="content">
+                    <img src={logo} className="App-logo" alt="logo" />
+                    <ShopSearchBar handleSubmit={handleSubmit} searchQuery={query} setSearchQuery={setQuery}/>
+                </div>
+            </header>
+            <div className='body'>
+            <Modal show={open} close={close}>{currItem ? <ShopItem item={currItem}/> :  <p class="text">{currMessage}</p>}</Modal>
+            </div>
         </div>
     );
 }
