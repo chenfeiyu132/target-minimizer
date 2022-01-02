@@ -2,6 +2,7 @@ import './Modal.css'
 import Close from "../../images/exit.svg";
 import { CSSTransition } from 'react-transition-group';
 import ReactDOM from 'react-dom';
+
 const Modal = ({ show, close, children }) => {
     return ReactDOM.createPortal(
         <CSSTransition in={show} unmountOnExit timeout={{ enter: 0, exit: 300 }}>
