@@ -56,7 +56,7 @@ function Home() {
                 <div id='tribute' className='text-center'>
                     <small>
                         Fun gadget by&nbsp;
-                        <a id='name' href="https://www.github.com/chenfeiyu132" data-content="Feiyu Wong">
+                        <a id='name' href="https://feiyuwong.codes" data-content="Feiyu Wong">
                             Feiyu Wong
                         </a>
                     </small>
