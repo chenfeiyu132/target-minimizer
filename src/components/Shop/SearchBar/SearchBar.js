@@ -8,7 +8,7 @@ const ShopSearchBar = ({handleSubmit, searchQuery, setSearchQuery}) => (
         <input
             type="text"
             class="input"
-            placeholder="Search Item"
+            placeholder="Search TCIN"
             name="s"
             value={searchQuery}
             onInput={e => setSearchQuery(e.target.value)}

@@ -43,14 +43,24 @@ function Home() {
 
     return (
         <div className="App">
-            <header className="App-header"> 
+            <header className="header"> 
                 <div className="content">
-                    <img src={logo} className="App-logo" alt="logo" />
+                    <img src={logo} className="logo" alt="logo" />
                     <ShopSearchBar handleSubmit={handleSubmit} searchQuery={query} setSearchQuery={setQuery}/>
                 </div>
             </header>
             <div className='body'>
-            <Modal show={open} close={close}>{currItem ? <ShopItem item={currItem}/> :  <p class="text">{currMessage}</p>}</Modal>
+                <Modal show={open} close={close}>{currItem ? <ShopItem item={currItem}/> :  <p class="text">{currMessage}</p>}</Modal>
+            </div>
+            <div className='footer'>
+                <div id='tribute' className='text-center'>
+                    <small>
+                        Fun gadget by&nbsp;
+                        <a id='name' href="https://www.github.com/chenfeiyu132" data-content="Feiyu Wong">
+                            Feiyu Wong
+                        </a>
+                    </small>
+                </div>
             </div>
         </div>
     );

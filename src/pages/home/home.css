@@ -1,22 +1,63 @@
-  
-.App-logo {
+
+
+.App {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1rem;
+}
+
+.logo {
     height: 40vmin;
     pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
-}
-
-.App-header {
-    min-height: 100vh;
+.header {
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+.text-center {
+    text-align: center!important;
+}
+
 .content {
     text-align: center;
+}
+
+#tribute {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.footer {
+    height: 75px;
+}
+
+.footer a {
+    position: relative;
+    overflow: hidden;
+    font-weight: bolder;
+    color: royalblue;
+    text-decoration: underline;
+}
+
+.footer a::before  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: midnightblue;
+    overflow: hidden;
+    content: attr(data-content); /* Prints the value of the attribute */
+    transition: width 275ms ease;
+    width: 0;
+    white-space: nowrap;
+}
+
+.footer a:hover::before {
+    width: 100%;
+}
+
+.footer a {
+    text-decoration: none;
 }
