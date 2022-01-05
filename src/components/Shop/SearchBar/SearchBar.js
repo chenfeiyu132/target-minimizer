@@ -13,7 +13,8 @@ const ShopSearchBar = ({handleSubmit, searchQuery, setSearchQuery}) => (
             value={searchQuery}
             onInput={e => setSearchQuery(e.target.value)}
         />
-        <button id="search-button" class="button" type="submit">Search</button>
+        <button id="search-button" class="primary button" type="submit">Search</button>
+        {/* <button id='helper-button' class='secondary button'>Feeling Random</button> */}
     </form>
 );
 

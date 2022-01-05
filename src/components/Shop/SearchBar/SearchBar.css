@@ -43,20 +43,24 @@
     padding: 6px 12px;
     font-size: 12px;
     border-radius: 4px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(204, 0, 0);
-    border-color: rgb(204, 0, 0);
+    margin-right: 5px;
     transition-duration: 0.4s;
     -webkit-transition-duration: 0.4s;
 }
 
-.button:hover {
+.primary.button {
+    color: rgb(255, 255, 255);
+    background-color: rgb(204, 0, 0);
+    border-color: rgb(204, 0, 0);
+}
+
+.primary.button:hover {
     color: rgb(255, 255, 255);
     background-color: rgb(170, 0, 0);
     border-color: rgb(170, 0, 0);
 }
 
-.button:after {
+.primary.button:after {
     content: "";
     display: block;
     position: absolute;
@@ -75,6 +79,10 @@
 }
 
 .button:active:after {
+    top: 0;
+}
+
+.primary.button:active:after {
     box-shadow: 0 0 0 0 rgb(204, 0, 0);
     position: absolute;
     border-radius: 4px;
@@ -88,4 +96,13 @@
     position: relative;
     margin: 1em;
     border-radius: var(5px);
+}
+
+form {
+    display: block;
+}
+
+form * {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }

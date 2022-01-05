@@ -61,3 +61,45 @@
 .footer a {
     text-decoration: none;
 }
+
+.search {
+    display: block;
+}
+
+.secondary.button {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(136, 136, 136);
+    color: rgb(51, 51, 51);
+}
+
+.secondary.button:hover {
+    background-color: rgb(247, 247, 247);
+    border-color: rgb(51, 51, 51);
+    color: rgb(51, 51, 51);
+}
+
+.secondary.button:active {
+    color: rgb(255, 255, 255);
+    background-color: rgb(51, 51, 51);
+    border-color: rgb(51, 51, 51);
+}
+
+.space {
+    color: rgba(136, 136, 136, 0.6);
+    display: inline-block; 
+    width: 32px;
+}
+
+#help-trigger {
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+#help-trigger:hover {
+    color: rgb(51, 51, 51); 
+    text-shadow: 0 0 8px rgb(0 0 0 / 60%);
+}
+
+.small {
+    font-size: smaller;
+}

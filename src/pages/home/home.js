@@ -1,42 +1,49 @@
 import React, { useState } from 'react';
 import { useInput } from '../../hooks/input-hook';
-import { ShopSearchBar, ShopItem, Modal } from '../../components';
+import { ShopSearchBar, ShopItem, Modal, Info } from '../../components';
 import logo from '../../images/target.svg';
 import './home.css';
 
 function Home() {
     const [currItem, setCurrItem] = useState(undefined);
-    const [open, setOpen] = useState(false);
-    const [currMessage, setCurrMessage] = useState('Please Begin Your Search');
+    const [modalOpen, setModalOpen] = useState(false);
+    const [message, setMessage] = useState(null);
+    const [modalContent, setModalContent] = useState(<p class="text">Please begin your search</p>);
     const { value:query, setValue:setQuery, reset:resetQuery } = useInput('');
 
     const isTcin = (str) => {
         return str.length === 8 && /^\d+$/.test(str);
     }
     const close = () => {
-        setOpen(false)
+        setModalOpen(false);
     }
-    
+
+    const populateHelper = () => {
+        setModalContent(<Info/>)
+        setModalOpen(true);
+    }   
+
     const handleSubmit = (evt) => {
         evt.preventDefault();
         let url = '/item'
         if (isTcin(query)) {
             url += `/${query}`
         } else {
-            setCurrMessage("Invalid Input, please try entering the item's TCIN");
             resetQuery();
+            setMessage('Invalid TCIN input, please search for the item TCIN on the target item page');
             return;
         }
         
         fetch(url).then(res => res.json()).then(data => {
-            setCurrMessage(data.message)
+            setMessage(data.message);
             if (data.success) {
                 var item = JSON.parse(data.result)
                 setCurrItem(item);
+                setModalContent(<ShopItem item={item}/>)
             } else {
                 setCurrItem(undefined);
             }
-            setOpen(true);
+            setModalOpen(true);
             resetQuery();
         });
     }
@@ -46,20 +53,28 @@ function Home() {
             <header className="header"> 
                 <div className="content">
                     <img src={logo} className="logo" alt="logo" />
-                    <ShopSearchBar handleSubmit={handleSubmit} searchQuery={query} setSearchQuery={setQuery}/>
+                    <div className='search'>
+                        <ShopSearchBar handleSubmit={handleSubmit} searchQuery={query} setSearchQuery={setQuery}/>
+                    </div>
+                    
+                    {message && message}
                 </div>
             </header>
             <div className='body'>
-                <Modal show={open} close={close}>{currItem ? <ShopItem item={currItem}/> :  <p class="text">{currMessage}</p>}</Modal>
+                <Modal show={modalOpen} close={close}>{modalContent}</Modal>
             </div>
             <div className='footer'>
                 <div id='tribute' className='text-center'>
-                    <small>
+                    <span className='small' id='help-trigger' onClick={populateHelper}>
+                        How do I use this?
+                    </span>
+                    <span className='space'> | </span>
+                    <span className='small'>
                         Fun gadget by&nbsp;
                         <a id='name' href="https://feiyuwong.codes" data-content="Feiyu Wong">
                             Feiyu Wong
                         </a>
-                    </small>
+                    </span>
                 </div>
             </div>
         </div>
