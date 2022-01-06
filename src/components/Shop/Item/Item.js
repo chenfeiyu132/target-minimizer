@@ -11,7 +11,7 @@ const ShopItem = ({ item }) => {
                 <p>TCIN: {item.tcin}</p>
                 
                 <p>Price: ${item.min_cost}</p>
-                <p>Sample Cheapest Stores: {item.min_stores['name'].slice(0, NUM_STORES).map((name, index) => `${name}(${item.min_stores['id'][index]})`).join(' and ')}</p>
+                <p>Sample Cheapest Store(s): {item.min_stores['name'].slice(0, NUM_STORES).map((name, index) => `${name}(${item.min_stores['id'][index]})`).join(' and ')}</p>
             </div>
         </div>
     )
