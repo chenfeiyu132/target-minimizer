@@ -3,7 +3,9 @@ import './Card.css'
 const Card = ({children}) => {
     return (
         <div className='card'>
-            {children}
+            <div className='card-container'>
+                {children}
+            </div>
         </div>
     )
 }

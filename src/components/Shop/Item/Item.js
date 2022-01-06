@@ -6,7 +6,7 @@ const ShopItem = ({ item }) => {
     return (
         <div className='item'>
             <img src={item.image_url} alt='item'/>
-            <div className='container'>
+            <div className='item-container'>
                 <h3>{Html5Entities.decode(item.name)}</h3>
                 <p>TCIN: {item.tcin}</p>
                 

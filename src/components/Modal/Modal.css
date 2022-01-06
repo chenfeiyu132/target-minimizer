@@ -25,6 +25,7 @@
 }
 
 .modal-content {
+    overflow-y: hidden;
     border-radius: 0.3rem;
     width: 500px;
     background-color: #fff;
@@ -42,12 +43,21 @@
 
 .modal-header {
     display: flex;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
 }
 
 .modal-body {
-    padding: 10px;
+    overflow-y: auto;
+    max-height: 72vh;
     border-top: 1px solid #eee;
+    padding: 20px;
+}
+
+.modal-title {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .close {

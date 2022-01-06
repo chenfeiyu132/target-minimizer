@@ -1,9 +1,8 @@
+import './Info.css'
+
 const Info = () => {
     return (
         <div className='info-wrapper'>
-            <h3>
-                How do you use this site?
-            </h3>
             <p>
                 The search tool essentially provides you the cheapest Target store locations for inputted item TCIN
             </p>

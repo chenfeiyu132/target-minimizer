@@ -6,6 +6,7 @@ import './home.css';
 
 function Home() {
     const [currItem, setCurrItem] = useState(undefined);
+    const [modalTitle, setModalTitle] = useState('');
     const [modalOpen, setModalOpen] = useState(false);
     const [message, setMessage] = useState(null);
     const [modalContent, setModalContent] = useState(<p class="text">Please begin your search</p>);
@@ -19,9 +20,23 @@ function Home() {
     }
 
     const populateHelper = () => {
+        setModalTitle('Help')
         setModalContent(<Info/>)
         setModalOpen(true);
     }   
+
+    const handleRandom = (evt) => {
+        evt.preventDefault();
+        const url = '/item/random'
+        fetch(url).then(res => res.json()).then(data => {
+            setMessage(null);
+            setModalTitle('Item Details');
+            var item = JSON.parse(data.result)
+            setCurrItem(item);
+            setModalContent(<ShopItem item={item}/>)
+            setModalOpen(true);
+        })
+    }
 
     const handleSubmit = (evt) => {
         evt.preventDefault();
@@ -35,7 +50,8 @@ function Home() {
         }
         
         fetch(url).then(res => res.json()).then(data => {
-            setMessage(data.message);
+            setMessage(null);
+            setModalTitle('Item Details');
             if (data.success) {
                 var item = JSON.parse(data.result)
                 setCurrItem(item);
@@ -54,14 +70,14 @@ function Home() {
                 <div className="content">
                     <img src={logo} className="logo" alt="logo" />
                     <div className='search'>
-                        <ShopSearchBar handleSubmit={handleSubmit} searchQuery={query} setSearchQuery={setQuery}/>
+                        <ShopSearchBar handleSubmit={handleSubmit} handleRandom={handleRandom} searchQuery={query} setSearchQuery={setQuery}/>
                     </div>
                     
                     {message && message}
                 </div>
             </header>
             <div className='body'>
-                <Modal show={modalOpen} close={close}>{modalContent}</Modal>
+                <Modal title={modalTitle} show={modalOpen} close={close}>{modalContent}</Modal>
             </div>
             <div className='footer'>
                 <div id='tribute' className='text-center'>

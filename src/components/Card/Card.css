@@ -20,7 +20,7 @@
 }
 
 /* Add some padding inside the card container */
-.container {
+.card-container {
     text-align: left;
     min-width: fit-content;
     margin: 30px;

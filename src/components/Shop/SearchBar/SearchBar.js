@@ -1,6 +1,6 @@
 import './SearchBar.css';
 
-const ShopSearchBar = ({handleSubmit, searchQuery, setSearchQuery}) => (
+const ShopSearchBar = ({handleSubmit, handleRandom, searchQuery, setSearchQuery}) => (
     <form id="search-bar" onSubmit={handleSubmit}>
         <label htmlFor="header-search">
             <span className="visually-hidden">Search Item</span>
@@ -14,7 +14,7 @@ const ShopSearchBar = ({handleSubmit, searchQuery, setSearchQuery}) => (
             onInput={e => setSearchQuery(e.target.value)}
         />
         <button id="search-button" class="primary button" type="submit">Search</button>
-        {/* <button id='helper-button' class='secondary button'>Feeling Random</button> */}
+        <button id='random-button' class='secondary button' onClick={handleRandom}>Feeling Random</button>
     </form>
 );
 

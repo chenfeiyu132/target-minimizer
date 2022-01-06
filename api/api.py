@@ -50,4 +50,11 @@ def get_item(tcin):
             return make_response({'success': False, 'message': 'search starting'}, 202)
         else:
             return make_response({'success': False, 'message': 'waiting for item to be searched'}, 202)
-        
+
+@app.route('/item/random')
+def get_random_item():
+    items = db['items']
+    random_sample = list(items.aggregate([{ '$sample': { 'size' : 1 }}]))[0]
+    minCost, minLocs = random_sample['min_cost'], random_sample['min_stores']
+    item = json_util.dumps(random_sample)
+    return make_response({'success': True, 'message': 'The best price is {0} at {1}({2}).'.format(minCost, minLocs['name'][0], minLocs['id'][0]), 'result': item}, 200)
