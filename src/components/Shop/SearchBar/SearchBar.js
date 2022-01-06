@@ -13,8 +13,10 @@ const ShopSearchBar = ({handleSubmit, handleRandom, searchQuery, setSearchQuery}
             value={searchQuery}
             onInput={e => setSearchQuery(e.target.value)}
         />
-        <button id="search-button" class="primary button" type="submit">Search</button>
-        <button id='random-button' class='secondary button' onClick={handleRandom}>Feeling Random</button>
+        <div className='button-group'>
+            <button id="search-button" class="primary button" type="submit">Search</button>
+            <button id='random-button' class='secondary button' onClick={handleRandom}>Feeling Random</button>
+        </div>
     </form>
 );
 
