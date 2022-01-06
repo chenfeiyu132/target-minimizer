@@ -3,6 +3,10 @@
 .App {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .logo {
@@ -31,6 +35,7 @@
 }
 
 .footer {
+    margin-top: auto;
     height: 75px;
 }
 

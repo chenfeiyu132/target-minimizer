@@ -50,16 +50,17 @@ function Home() {
         }
         
         fetch(url).then(res => res.json()).then(data => {
-            setMessage(null);
             setModalTitle('Item Details');
             if (data.success) {
                 var item = JSON.parse(data.result)
                 setCurrItem(item);
                 setModalContent(<ShopItem item={item}/>)
+                setModalOpen(true);
+                setMessage(null);
             } else {
                 setCurrItem(undefined);
+                setMessage(data.message);
             }
-            setModalOpen(true);
             resetQuery();
         });
     }
@@ -72,8 +73,9 @@ function Home() {
                     <div className='search'>
                         <ShopSearchBar handleSubmit={handleSubmit} handleRandom={handleRandom} searchQuery={query} setSearchQuery={setQuery}/>
                     </div>
-                    
-                    {message && message}
+                    <span style={{visibility : message ? 'visible' : 'hidden'}}>
+                        {message ? message : 'Please begin your search'}
+                    </span>
                 </div>
             </header>
             <div className='body'>
