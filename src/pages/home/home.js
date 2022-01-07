@@ -83,13 +83,13 @@ function Home() {
             </div>
             <div className='footer'>
                 <div id='tribute' className='text-center'>
-                    <span className='small' id='help-trigger' onClick={populateHelper}>
-                        How do I use this?
+                    <span className='small highlight' id='help-trigger' onClick={populateHelper} data-content="How do I use this?">
+                        How do I use this<span style={{visibility: 'hidden', fontWeight: 'bolder'}}>?</span>
                     </span>
                     <span className='space'> | </span>
                     <span className='small'>
                         Fun gadget by&nbsp;
-                        <a id='name' href="https://feiyuwong.codes" data-content="Feiyu Wong">
+                        <a id='name' className='highlight' href="https://feiyuwong.codes" data-content="Feiyu Wong">
                             Feiyu Wong
                         </a>
                     </span>

@@ -10,7 +10,7 @@
 }
 
 .logo {
-    height: 40vmin;
+    height: 30vmin;
     pointer-events: none;
 }
 
@@ -39,15 +39,15 @@
     height: 75px;
 }
 
-.footer a {
+.footer .highlight {
     position: relative;
     overflow: hidden;
     font-weight: bolder;
     color: royalblue;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
-.footer a::before  {
+.footer .highlight::before  {
     position: absolute;
     top: 0;
     left: 0;
@@ -59,12 +59,8 @@
     white-space: nowrap;
 }
 
-.footer a:hover::before {
+.footer .highlight:hover::before {
     width: 100%;
-}
-
-.footer a {
-    text-decoration: none;
 }
 
 .search {
@@ -97,12 +93,12 @@
 
 #help-trigger {
     cursor: pointer;
-    transition: all 0.3s ease-out;
+    color: rgba(51, 51, 51, 0.6);
+    font-weight: normal;
 }
 
-#help-trigger:hover {
+#help-trigger::before {
     color: rgb(51, 51, 51); 
-    text-shadow: 0 0 8px rgb(0 0 0 / 60%);
 }
 
 .small {

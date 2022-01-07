@@ -4,7 +4,7 @@ const Info = () => {
     return (
         <div className='info-wrapper'>
             <p>
-                The search tool essentially provides you the cheapest Target store locations for inputted item TCIN
+                The search tool essentially gives you the target store locations which provides the cheapest items of your choosing
             </p>
             <p>
                 Now you might be wondering...How on earth would that be useful?
