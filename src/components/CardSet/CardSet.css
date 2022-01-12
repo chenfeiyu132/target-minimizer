@@ -3,7 +3,6 @@
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    margin: 5vh;
 }
 
 .column-grid > div {
@@ -16,4 +15,12 @@
 
 .column-grid > p {
     font-size: smaller;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .column-grid > div {
+    height: 200px;
+    min-width: 100px;
+  }
 }
