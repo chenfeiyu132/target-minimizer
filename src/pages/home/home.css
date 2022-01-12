@@ -104,3 +104,8 @@
 .small {
     font-size: smaller;
 }
+
+.search-items {
+    margin: 0 auto;
+    width: 70%;
+}

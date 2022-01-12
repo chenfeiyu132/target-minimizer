@@ -1,16 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { useInput } from '../../hooks/input-hook';
-import { ShopSearchBar, ShopItem, Modal, Info } from '../../components';
+import { ShopSearchBar, ShopItem, Modal, Info, CardSet } from '../../components';
 import logo from '../../images/target.svg';
 import './home.css';
 
 function Home() {
-    const [currItem, setCurrItem] = useState(undefined);
     const [modalTitle, setModalTitle] = useState('');
+    const [searchItems, setSearchItems] = useState([]);
     const [modalOpen, setModalOpen] = useState(false);
     const [message, setMessage] = useState(null);
     const [modalContent, setModalContent] = useState(<p class="text">Please begin your search</p>);
     const { value:query, setValue:setQuery, reset:resetQuery } = useInput('');
+    const itemsRef = useRef(null);
+    
+    
+    const scrollToRef = (ref) => window.scrollTo({top: ref.current.offsetTop, behavior: 'smooth'})   
+    const scrollToItems = () => scrollToRef(itemsRef)
 
     const isTcin = (str) => {
         return str.length === 8 && /^\d+$/.test(str);
@@ -28,14 +33,35 @@ function Home() {
     const handleRandom = (evt) => {
         evt.preventDefault();
         const url = '/item/random'
-        fetch(url).then(res => res.json()).then(data => {
+        fetch(url).then(res => res.json()).then((data) => {
             setMessage(null);
             setModalTitle('Item Details');
-            var item = JSON.parse(data.result)
-            setCurrItem(item);
+            var item = data.result;
             setModalContent(<ShopItem item={item}/>)
             setModalOpen(true);
         })
+    }
+
+    const fetchTCIN = (data) => {
+        setModalTitle('Item Details');
+        if (data.success) {
+            var item = data.result;
+            setModalContent(<ShopItem item={item}/>)
+            setModalOpen(true);
+            setMessage(null);
+        } else {
+            setMessage(data.message);
+        }
+    }
+
+    const fetchItems = (data) => {
+        if (data.success) {
+            const items = data.result;
+            setSearchItems(items.map((itemInfo) => 
+            <ShopItem item={itemInfo}/>
+        ));
+            scrollToItems();
+        }
     }
 
     const handleSubmit = (evt) => {
@@ -43,27 +69,18 @@ function Home() {
         let url = '/item'
         if (isTcin(query)) {
             url += `/${query}`
+            fetch(url).then(res => res.json()).then(data => {
+                fetchTCIN(data);
+            });
         } else {
-            resetQuery();
-            setMessage('Invalid TCIN input, please search for the item TCIN on the target item page');
-            return;
+            url += `/search?query=${query}`
+            fetch(url).then(res => res.json()).then(data => {
+                fetchItems(data);
+            });
         }
-        
-        fetch(url).then(res => res.json()).then(data => {
-            setModalTitle('Item Details');
-            if (data.success) {
-                var item = JSON.parse(data.result)
-                setCurrItem(item);
-                setModalContent(<ShopItem item={item}/>)
-                setModalOpen(true);
-                setMessage(null);
-            } else {
-                setCurrItem(undefined);
-                setMessage(data.message);
-            }
-            resetQuery();
-        });
+        resetQuery();   
     }
+
 
     return (
         <div className="App">
@@ -80,6 +97,9 @@ function Home() {
             </header>
             <div className='body'>
                 <Modal title={modalTitle} show={modalOpen} close={close}>{modalContent}</Modal>
+                <div ref={itemsRef} className='search-items'>
+                    <CardSet items={searchItems}/>
+                </div>
             </div>
             <div className='footer'>
                 <div id='tribute' className='text-center'>

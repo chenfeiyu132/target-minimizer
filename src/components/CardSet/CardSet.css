@@ -1,0 +1,19 @@
+.column-grid {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5vh;
+}
+
+.column-grid > div {
+    margin: 5px;
+    width: 30%;
+    height: 300px;
+    min-width: 165px;
+    max-width: 220px;
+}
+
+.column-grid > p {
+    font-size: smaller;
+}

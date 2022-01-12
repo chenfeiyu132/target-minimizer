@@ -1,7 +1,9 @@
 .item h3 {
+    font-size: 70%;
     color: black;
 }
 .item p {
+    font-size: 60%;
     color: black;
 }
 .item img {
@@ -11,6 +13,11 @@
     height: 25vh;
 }
 
+.item {
+    height: 100%;
+}
+
 .item-container {
     padding: 10px;
+    max-height: 80%;
 }
