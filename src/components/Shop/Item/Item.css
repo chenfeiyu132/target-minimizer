@@ -22,14 +22,14 @@
     max-height: 80%;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     /* For mobile phones: */
     .item h3 {
-        font-size: 40%;
+        font-size: 6.4px
     }
     
     .item p {
-        font-size: 40%;
+        font-size: 6.4px;
     }
   }
 
