@@ -2,7 +2,7 @@ import requests
 import pandas as pd
 import asyncio
 import aiohttp
-from uszipcode import SearchEngine, Zipcode
+from uszipcode import SearchEngine
 
 
 s = requests.session()

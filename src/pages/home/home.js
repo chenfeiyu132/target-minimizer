@@ -35,10 +35,15 @@ function Home() {
         const url = '/item/random'
         fetch(url).then(res => res.json()).then((data) => {
             setMessage(null);
-            setModalTitle('Item Details');
-            var item = data.result;
-            setModalContent(<ShopItem item={item}/>)
-            setModalOpen(true);
+            if (data.success) {
+                setModalTitle('Item Details');
+                var item = data.result;
+                setModalContent(<ShopItem item={item}/>)
+                setModalOpen(true);
+            } else {
+                // open alert with data.message saying nothing found
+                alert(data.message);
+            }
         })
     }
 

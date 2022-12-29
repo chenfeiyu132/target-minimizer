@@ -1,33 +1,25 @@
 from flask import Flask, make_response, request
 import asyncio
 from flask.json import jsonify
-import requests
 from helper import asyncMinCost, getItemInfo
 from threading import Thread
-from pathlib import Path
-from base import db
-from bson import json_util
+from base import db, TARGET_KEY
+from datetime import datetime
 
 app = Flask(__name__, static_folder='../build', static_url_path='/')
 tcin_tasks = {}
-
 class Worker(Thread):
     def __init__(self, tcin):
         Thread.__init__(self)
         self.tcin = tcin
     def run(self):
         #Gets the auth token from target for api requests
-        s = requests.session()
-        s.get('https://www.target.com')
-        user_id = s.cookies['visitorId']
-        
-        minLocs, minCost = asyncio.run(asyncMinCost(tcin_tasks, self.tcin, user_id))
-        item_info = getItemInfo(self.tcin, user_id)
-        item_name = item_info['search_response']['items']['Item'][0]['title']
-        image_data = item_info['search_response']['items']['Item'][0]['images'][0]
-        item_image_url = image_data['base_url'] + image_data['primary']
+        minLocs, minCost = asyncio.run(asyncMinCost(tcin_tasks, self.tcin, TARGET_KEY))
+        item_info = getItemInfo(self.tcin, TARGET_KEY)
+        item_name = item_info['data']['product']['item']['product_description']['title']
+        item_image_url = item_info['data']['product']['item']['enrichment']['images']['primary_image_url']
         items = db['items']
-        items.insert_one({'name': item_name, 'tcin': self.tcin, 'min_stores': minLocs, 'min_cost': minCost, 'image_url': item_image_url})
+        items.insert_one({'name': item_name, 'tcin': self.tcin, 'min_stores': minLocs, 'min_cost': minCost, 'image_url': item_image_url, 'date': datetime.now()})
 
 @app.route('/')
 def index():
@@ -54,9 +46,12 @@ def get_item(tcin):
 @app.route('/item/random')
 def get_random_item():
     items = db['items']
-    random_sample = list(items.aggregate([{ '$sample': { 'size' : 1 }}, {'$unset': ['_id']}]))[0]
-    minCost, minLocs = random_sample['min_cost'], random_sample['min_stores']
-    return make_response(jsonify({'success': True, 'message': 'The best price is {0} at {1}({2}).'.format(minCost, minLocs['name'][0], minLocs['id'][0]), 'result': random_sample}), 200)
+    random_sample = list(items.aggregate([{ '$sample': { 'size' : 1 }}, {'$unset': ['_id']}]))
+    if random_sample:
+        minCost, minLocs = random_sample[0]['min_cost'], random_sample[0]['min_stores']
+        return make_response(jsonify({'success': True, 'message': 'The best price is {0} at {1}({2}).'.format(minCost, minLocs['name'][0], minLocs['id'][0]), 'result': random_sample[0]}), 200)
+    else:
+        return make_response(jsonify({'success': False, 'message': 'No items in collection yet, be the first!', 'result': None}), 200)
 
 @app.route('/item/search')
 def search_items():
