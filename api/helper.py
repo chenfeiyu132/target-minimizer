@@ -11,7 +11,7 @@ from base import AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY
 # querystring = {"store_id":"3991","tcin":"14713534"}
 
 # response = requests.request("GET", url, headers=headers, params=querystring)
-url = 'https://redsky.target.com/redsky_aggregations/v1/web/pdp_client_v1?is_bot=False&tcin=%s&key=%s&pricing_store_id=%s'
+url = 'https://redsky.target.com/v2/plp/collection/%s?key=%s&pricing_store_id=%s'
 # print(response.text)
 
 def getPriceOfItem(url):
@@ -30,17 +30,17 @@ def minCost(locations, item_id):
             minLocation = location
     return (minCost, minLocation)
 
-def getItemInfo(item_id, key):
+def getItemInfo(item_id, user_id):
     STORE_ID = 1075
-    taskUrl = url %(item_id, key, STORE_ID)
+    taskUrl = url %(item_id, user_id, STORE_ID)
     res = requests.get(taskUrl)
     return res.json()
 
 async def asyncGetPriceOfItem(session, url):
     async with await session.get(url) as resp:
         json = await resp.json()
-        if 'price' in json['data']['product']:
-            return float(json['data']['product']['price']['formatted_current_price'].split(' - ')[0][1:])
+        if 'price' in json['search_response']['items']['Item'][0]:
+            return float(json['search_response']['items']['Item'][0]['price']['formatted_current_price'].split(' - ')[0][1:])
         return None
 
 async def asyncMinCost(tcin_tasks, item_id, key):
