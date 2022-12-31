@@ -19,7 +19,7 @@
 .env.production.local
 .env
 
-.flaskenv
+api/.flaskenv
 
 npm-debug.log*
 yarn-debug.log*
