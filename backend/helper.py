@@ -5,9 +5,6 @@ import pandas as pd
 from pathlib import Path
 from base import AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY
 
-
-
-
 # querystring = {"store_id":"3991","tcin":"14713534"}
 
 # response = requests.request("GET", url, headers=headers, params=querystring)

@@ -1,7 +1,7 @@
 from flask import Flask, make_response, request
 import asyncio
 from flask.json import jsonify
-from .helper import asyncMinCost, getItemInfo
+from helper import asyncMinCost, getItemInfo
 from threading import Thread
 from base import db, TARGET_KEY
 from datetime import datetime
