@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from os import environ
 
 
-load_dotenv()
+load_dotenv("./.flaskenv")
 MONGO_URI = environ.get('MONGO_URI')
 TARGET_KEY = environ.get('TARGET_KEY')
 AWS_ACCESS_KEY_ID = environ.get('AWS_ACCESS_KEY_ID')
